@@ -10,7 +10,7 @@
     }
 
     body{
-        background: url(25.jpg);
+        background-image: url(vellayanitvm6.jpg);
         background-size: cover;
         font-family: sans-serif;
         }
@@ -47,7 +47,7 @@
             color: #fff;
         }
         
-    input[type="button"]{
+    input[type="submit"]{
         border: none;
         outline: none;
         height: 40px;
@@ -58,7 +58,7 @@
     }
 
 
-    input[type="button"]:hover{
+    input[type="submit"]:hover{
              background: #a4b15c;
               transition: .6s;
             }
@@ -70,22 +70,22 @@
     </style>
     <body>  
         <div class="form-wrap">   
-            <form>
+            <form action="home.html" onsubmit="return phonenumberr() && validate() && passwordd()">
             
                 <h1>Sign Up</h1>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm Password">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="uname" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phoneno" placeholder="Mobile" required>
+                <input type="password" id="pwd" placeholder="Password" required>
+                <input type="submit" id="submit" value="SignUp">
                 
-                <a href="home.html">
-                    <input type="button" value="SignUp">
-                 </a>
                  
                 
                 
             </form>      
-        </div>   
+        </div>
+        <script src="formsign.js"></script>   
     </body>
 </html>
+
